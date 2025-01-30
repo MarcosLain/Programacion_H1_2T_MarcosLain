@@ -1,0 +1,176 @@
+/* General */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;  /* Fondo claro y suave */
+    color: #333;
+}
+
+h1 {
+    text-align: center;
+    color: #007bff; /* Azul para el título */
+    margin-top: 20px;
+}
+
+/* Barra de navegación */
+nav {
+    background-color: #007bff;  /* Azul celeste */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    margin: 0 15px;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* Logo */
+nav img {
+    width: 150px;
+    height: auto;
+    border: none;  /* Elimina cualquier borde alrededor de la imagen */
+}
+
+/* Formulario */
+form {
+    width: 80%;
+    max-width: 600px;
+    margin: 30px auto;
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+form label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+form input, form select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+form input[type="number"], form input[type="email"], form input[type="text"] {
+    font-size: 16px;
+}
+
+form select {
+    font-size: 16px;
+}
+
+form input[type="checkbox"] {
+    margin-top: 10px;
+    margin-right: 15px;
+    width: 20px;  /* Aumenta el tamaño del checkbox */
+    height: 20px; /* Aumenta el tamaño del checkbox */
+    vertical-align: middle;
+}
+
+/* Mejora la visibilidad del texto junto a los checkboxes */
+form label[for="paquete_deporte"], 
+form label[for="paquete_cine"], 
+form label[for="paquete_infantil"] {
+    font-weight: bold;
+    font-size: 16px;
+    margin-left: 5px;  /* Añade un pequeño espacio después del checkbox */
+}
+
+/* Mejora la visibilidad y disposición de los checkboxes */
+form .checkbox-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+form .checkbox-container label {
+    margin-right: 15px;
+}
+
+/* Estilo para los botones */
+form button {
+    padding: 12px 20px;
+    background-color: #28a745; /* Verde para botones de acción */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    font-size: 16px;
+}
+
+form button:hover {
+    background-color: #218838; /* Verde más oscuro al pasar el mouse */
+}
+
+/* Botón de Cancelar y Volver */
+a button {
+    padding: 12px 20px;
+    background-color: #007bff;  /* Azul para el botón de volver */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    width: 100%;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+a button:hover {
+    background-color: #0056b3; /* Azul más oscuro */
+}
+
+/* Enlace para volver */
+a {
+    display: inline-block;
+    text-decoration: none;
+    background-color: #007bff;
+    color: white;
+    padding: 12px 20px;
+    border-radius: 5px;
+    text-align: center;
+    width: 100%;
+    font-size: 16px;
+    margin-top: 20px;
+}
+
+a:hover {
+    background-color: #007bff; /* Azul más oscuro al pasar el mouse */
+}
+
+/* Estilo de la página responsiva (en dispositivos móviles) */
+@media screen and (max-width: 768px) {
+    form {
+        width: 95%;
+        padding: 15px;
+    }
+
+    form input, form select, form button {
+        font-size: 14px;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    form input[type="checkbox"] {
+        width: 25px;  /* Aumenta aún más el tamaño del checkbox en móviles */
+        height: 25px;
+    }
+}
